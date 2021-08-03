@@ -1,0 +1,64 @@
+<html>
+    <head><TITLE>FORM REGISTRATION</TITLE>
+        <style>
+            form{
+                border: 4px double rgb(90, 8, 8);
+                padding: 50px 30px 30px 50px;
+                background:mistyrose;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form action="./data.php">
+            First Name: <br>
+            <input type="text" name="first name" placeholder="Your First Name" required><br>
+            Last Name: <br>
+            <input type="text" name="last name" placeholder="Your Last Name" required><br>
+            Gender: <br>
+            <input type="radio" name="gender" id="">Male <br>
+            <input type="radio" name="gender" id="">Female <br>
+            <input type="radio" name="gender" id="">Others <br>
+            Email: <br>
+            <input type="email" name="email" placeholder="Your email address"required> <br>
+            Password: <br>
+            <input type="password" name="password" id="" maxlength="40" required> <br>
+            Date of Birth: <br>
+            <input type="date" name="date" id="" min="1990-01-01"max="2020-01-01"> <br>
+            Phone Number: <br>
+            <input type="text" name="phone" id=""  ><br>
+            Courses Applying For: <br>
+            <input type="checkbox" name="course" id="">Artificial Intelligence <br>
+            <input type="checkbox" name="course" id="">Machine Learning <br>
+            <input type="checkbox" name="course" id="">Data Science <br>
+            <input type="checkbox" name="course" id="">Introduction to Industry 4.0 <br>
+            <input type="checkbox" name="course" id="">Computer Graphics<br>
+            Address: <br>
+            <textarea name="address" id="" cols="30" rows="5"placeholder="Your postal address"></textarea><br>
+            City: <br>
+            <input type="text" placeholder="City"><br>
+            Zip Code: <br>
+            <input type="" pattern="(0-9){6}" placeholder="637301" maxlength="6"> <br>
+            State: <br>
+            <select name="state" id="">
+                <option value="tam">Tamilnadu</option>
+                <option value="and">Andhra pradesh</option>
+                <option value="kar">Karnataka</option>
+                <option value="ker">Kerala</option>
+                <option value="del">Delhi</option>
+            </select><br>
+            Country:
+            <select name="country" id="">
+                <option value="ind">India</option>
+                <option value="USA">America</option>
+                <option value="Pak">Pakistan</option>
+                <option value="jap">Japan</option>
+                <option value="korea">South Korea</option>
+            </select><br>
+            <input type="checkbox" name="" id="">I have read and agree to the waiver <br>
+            <input type="checkbox" name="" id="">I have read and accept the <a href="./terms.html">Terms of Services </a> and <a href="./policy.html">Privacy Policy</a><br>
+            <input type="reset" value="reset" width="100">&emsp14;
+            <input type="submit" name="submit" id="">
+          </form>
+    </body>
+</html>
